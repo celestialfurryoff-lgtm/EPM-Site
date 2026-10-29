@@ -1090,14 +1090,11 @@ function createServer(options = {}) {
   });
 }
 
-if (require.main === module) {
-  const server = createServer();
-  server.listen(PORT, () => {
-    console.log(`EPM site listening on port ${PORT}.`);
-  });
-}
+// Export the HTTP server itself so Vercel can invoke it as a server.
+// Attach the helpers as properties to preserve access for tests and local tooling.
+const server = createServer();
 
-module.exports = {
+Object.assign(server, {
   createServer,
   getGalleryImages,
   loadNews,
@@ -1105,4 +1102,12 @@ module.exports = {
   renderNewsList,
   validateContactPayload,
   isValidWebhook
-};
+});
+
+if (require.main === module) {
+  server.listen(PORT, () => {
+    console.log(`EPM site listening on port ${PORT}.`);
+  });
+}
+
+module.exports = server;
