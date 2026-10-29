@@ -1,0 +1,19 @@
+{
+  "name": "epm-site",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site vitrine multilingue pour Europa-Park Minecraft (EPM).",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  }
+}

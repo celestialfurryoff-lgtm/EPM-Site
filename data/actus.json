@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "id": "actu-test",
+      "date": "2026-10-29",
+      "translations": {
+        "fr": {
+          "category": "Test",
+          "title": "Actualité de test",
+          "summary": "Cette actualité est un exemple de test pour vérifier l’affichage des cartes.",
+          "body": [
+            "Ceci est un contenu de test, pas une annonce officielle du projet."
+          ]
+        },
+        "en": {
+          "category": "Test",
+          "title": "Test news article",
+          "summary": "This test article checks that news cards are displayed correctly.",
+          "body": [
+            "This is test content, not an official project announcement."
+          ]
+        },
+        "de": {
+          "category": "Test",
+          "title": "Test-Neuigkeit",
+          "summary": "Dieser Testbeitrag überprüft die Darstellung der Neuigkeiten-Karten.",
+          "body": [
+            "Dies ist ein Testinhalt und keine offizielle Projektankündigung."
+          ]
+        }
+      }
+    }
+  ]
+}
